@@ -32,23 +32,23 @@ public class FoodDeliveryMan {
     @Column
     private Role role;
 
-
-
-
-
 //  список заказов (2 направленая связь)+
     @OneToMany
     @JoinTable(name = "order_foodDeliveryMen", joinColumns = @JoinColumn(name = "order_id"),
             inverseJoinColumns = @JoinColumn(name = "foodDeliveryMen_id"))
     private Set<Order> order=new HashSet<>();
 
-//список заказчиков(2 направленая связь)+
-    @ManyToMany(mappedBy="foodDeliveryMen")
-    private Set<User> users = new HashSet<>();
 
-//список ресторанов(2 направленая связь)+
-    @ManyToMany(mappedBy = "foodDeliveryMen")
-    private Set<Restaurant> restaurants = new HashSet<>();
+
+
+    
+// //список заказчиков(2 направленая связь)+
+//     @ManyToMany(mappedBy="foodDeliveryMen")
+//     private Set<User> users = new HashSet<>();
+
+// //список ресторанов(2 направленая связь)+
+//     @ManyToMany(mappedBy = "foodDeliveryMen")
+//     private Set<Restaurant> restaurants = new HashSet<>();
 
 
 }
