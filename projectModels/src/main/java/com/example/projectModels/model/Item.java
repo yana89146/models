@@ -26,5 +26,8 @@ public class Item {
     @Column
     private Integer price;
 
+     @Lob
+    private byte[] bytes;
+
 
 }
