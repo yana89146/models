@@ -25,10 +25,10 @@ public class Order {
     private boolean isDelivery;
 
     @Column
-    private Date OrderStart;
+    private Date createdAt;
 
     @Column
-    private Date OrderEnd;
+    private Date completedAt;
 
     // ресторан (2 направленая связь)+
     @ManyToOne
