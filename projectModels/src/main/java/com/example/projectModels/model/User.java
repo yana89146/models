@@ -47,26 +47,7 @@ public class User {
             inverseJoinColumns = @JoinColumn(name = "order_id"))
     private Set<Order> orders = new HashSet<>();
 
-
     
-
-
-    //список доставщиков (2 направленая связь)+
-    // @ManyToMany(cascade = CascadeType.ALL)
-    // @JoinTable(name = "user_foodDeliveryMen",
-    //         joinColumns = @JoinColumn(name = "user_id", referencedColumnName = "id"),
-    //         inverseJoinColumns = @JoinColumn(name = "foodDeliveryMen_id", referencedColumnName = "id"))
-    // private Set<FoodDeliveryMan> foodDeliveryMen = new HashSet<>();
-
-    // //список ресторанов (2 направленая связь)+
-    // @ManyToMany(cascade = CascadeType.ALL)
-    // @JoinTable(name = "user_restaurant",
-    //         joinColumns = @JoinColumn(name = "user_id", referencedColumnName = "id"),
-    //         inverseJoinColumns = @JoinColumn(name = "restaurant_id", referencedColumnName = "id"))
-    // private Set<Restaurant> restaurants = new HashSet<>();
-
-    
-
 
 }
 
