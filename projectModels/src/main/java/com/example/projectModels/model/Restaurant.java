@@ -32,6 +32,9 @@ public class Restaurant {
     @Column
     private Role role;
 
+     @Lob
+    private byte[] bytes;
+
 
     //    список заказов (2 направленая связь)+
     @OneToMany
@@ -45,19 +48,6 @@ public class Restaurant {
     private Set<Item> items = new HashSet<>();
 
 
-    
-
-    //    список заказчиков (2 направленая связь)+
-    // @ManyToMany(mappedBy = "restaurants")
-    // private Set<User> users = new HashSet<>();
-
-
-    // //    список доставщиков еды (2 направленая связь)+
-    // @ManyToMany(cascade = CascadeType.ALL)
-    // @JoinTable(name = "restaurant_foodDeliveryMan",
-    //         joinColumns = @JoinColumn(name = "restaurant_id", referencedColumnName = "id"),
-    //         inverseJoinColumns = @JoinColumn(name = "foodDeliveryMan_id", referencedColumnName = "id"))
-    // private Set<FoodDeliveryMan> foodDeliveryMen = new HashSet<>();
 
 
 }
