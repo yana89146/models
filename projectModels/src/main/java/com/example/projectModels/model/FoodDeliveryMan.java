@@ -39,16 +39,4 @@ public class FoodDeliveryMan {
     private Set<Order> order=new HashSet<>();
 
 
-
-
-    
-// //список заказчиков(2 направленая связь)+
-//     @ManyToMany(mappedBy="foodDeliveryMen")
-//     private Set<User> users = new HashSet<>();
-
-// //список ресторанов(2 направленая связь)+
-//     @ManyToMany(mappedBy = "foodDeliveryMen")
-//     private Set<Restaurant> restaurants = new HashSet<>();
-
-
 }
